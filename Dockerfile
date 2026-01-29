@@ -1,15 +1,12 @@
-# Dockerfile (arm64 호환)
-FROM arm64v8/ruby:3.3
+FROM ruby:3.2.10-slim-bookworm
 
-RUN apt-get update -qq && apt-get install -y build-essential
-
+RUN apt-get update -qq && apt-get install -y build-essential git
 RUN gem install bundler jekyll rexml
 
 WORKDIR /srv/jekyll
 
-COPY . /srv/jekyll
-
+COPY Gemfile Gemfile.lock ./
 RUN bundle install
 
-CMD ["bundle", "exec", "jekyll", "serve", "--host", "--livereload", "0.0.0.0"]
-
+COPY . .
+CMD ["bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0"]

@@ -19,7 +19,7 @@ comments: true
 
  소규모의 데이터를 활용하는 것은 쉽지 않다.
  
- 특히, 그 데이터에서 의미를 끌어내는 것을 넘어 활용해야 하는 경우 많은 연구자들이 어려움을 표한다.
+ 특히, 그 데이터에서 의미를 끌어내는 것을 넘어 활용해야 하는 경우 많은 어려움이 동반된다.
  
  본 글에선 관광데이터에 PageRank 시스템을 활용해 추천 시스템을 구현한 사례를 탐구하고자 한다.
 
@@ -80,10 +80,49 @@ comments: true
 
 ## Data Flow of Model
 
-해당 모델은 **[2025 관광데이터공모전](https://www.2025tourapi.com/)** 의 팀 **PICK AND GO** [백엔드 추천 서버](https://github.com/MovingJu/Pick_and_Go)에 활용되었다.
+해당 추천 모델은 **[2025 관광데이터공모전](https://www.2025tourapi.com/)** 의 팀 **PICK AND GO** [백엔드 추천 서버](https://github.com/MovingJu/Pick_and_Go)에 활용되었다.
 
 따라서, 백엔드 추천 서버의 데이터 흐름을 모식화 했다.
 
+<img src="/image/backend.png" alt="image">
+> *Fig. 0*
+
+위 그림의 User가 선택한 모든 관광지를 받아올 때, 수백 - 수천개의 관광지를 불러와야 한다.
+
+이와 동시에 각 관광지들이 유저가 고른 관광지와 얼마나 비슷한지 수치화 하고, 순위를 매긴다.
+
+이 이후부터 관광지 순위에 유저의 관광지 코드 선호도와 관광지 이미지를 어떻게 반영했는지 탐구할 것이다.
+
+부가적으로, 비동기 처리하며 성능을 600배 이상 향상시킨 기능 클래스는 다른 [Research]()에서 보고하겠다.
+
+<br>
+
+# PageRank
+
+추천 모델을 정확히 파악하기 위해선 현대 검색 알고리즘의 핵심인 PageRank 시스템에 대해 이해해야 한다.
+
+임의의 웹 페이지 A, B, C, D에 대해 다음과 같은 참조 관계가 있다고 하자.
+
+<img src="/image/graph.png" alt="image">
+> *Fig. 1*
+
+
+$$
+\begin{pmatrix}
+ & A & B & C & D \\
+A & 1 & 0 & 1 \\
+B & 1 & 0 & 0 \\
+C & 0 & 1 & 0 \\
+D & 0 & 0 & 1
+\end{pmatrix}
+$$
+
+$$
+\begin{pmatrix}
+1 & 2 \\
+3 & 4
+\end{pmatrix}
+$$
 
 
 이상.

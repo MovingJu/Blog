@@ -137,20 +137,16 @@ permalink: /about/
   <summary><strong>2025년</strong></summary>
   <ul>
     <li>
-      <strong>1월:</strong> <a href="https://github.com/MovingJu/EverybanKHU">EveryBanKHU 개발</a><br>
-      <blockquote>Python의 kivy 라이브러리를 이용해서 토스같은 기존의 자신 관리 프로그램보다 더 다양한 가계부 통계를 제공하는 어플리케이션</blockquote>
-    </li>
-    <li>
-      <strong>2월:</strong> <a href="https://github.com/MovingJu/python_server">Pyramid Server 개발</a><br>
-      <blockquote>유저의 데이터 중 중요한 내용을 전부 암호화해 보안을 극대화하고, 권한을 피라미드처럼 관리해 확장성이 우수한 사이트</blockquote>
-    </li>
-    <li>
       <strong>4월:</strong> <a href="https://github.com/MovingJu/Semoton_TEAM_12">제 1회 세모톤 우수상 수상</a><br>
       <blockquote>경희대학교 3개 단과대 학생회에서 개최된 <a href="https://www.instagram.com/p/DGsJ_Xozl5w">세모톤</a>에서 LinKHU 캠퍼스 제휴 지도 개발. 백엔드 총괄.</blockquote>
     </li>
     <li>
       <strong>5월:</strong> <a href="https://thon.khlug.org/about/2025">제 10회 쿠톤 장려상 수상</a><br>
       <blockquote>작물PICK 어플 제작. 소셜 로그인, OpenAI API 연결, 프롬프트 작성, 깃허브 관리 담당.</blockquote>
+    </li>
+    <li>
+      <strong>10월:</strong> <a href="https://thon.khlug.org/about/2025">ICPC 경희대학교 예선 교내 2등</a><br>
+      <blockquote>Team Alcoholic으로 참가. 자세한 내용은 [기사](https://swedu.khu.ac.kr/bbs/board.php?bo_table=07_02&wr_id=564) 참고.</blockquote>
     </li>
   </ul>
 </details>
@@ -166,11 +162,11 @@ permalink: /about/
     </li>
     <li>
       <strong>6월:</strong> 교내 컴퓨터 비전 프로젝트 대회 수상<br>
-      <blockquote>YOLO v5 활용한 최대 규모 프로젝트</blockquote>
+      <blockquote>YOLO v5 활용한 프로젝트</blockquote>
     </li>
     <li>
       <strong>11월:</strong> <a href="https://github.com/MovingJu/python_DANP">DANP</a><br>
-      <blockquote>마약 복용 여부 분류 AI 프로젝트, 어려운 이미지셋으로 성과 기록</blockquote>
+      <blockquote>마약 복용 여부 분류 AI 프로젝트, 소규모 이미지셋으로 성과 기록</blockquote>
     </li>
   </ul>
 </details>
@@ -206,6 +202,20 @@ permalink: /about/
 ----
 
 # - 이력
+
+<details>
+  <summary><strong>2025년</strong></summary>
+  <ul>
+    <li>
+      <strong>12월:</strong> 경희대학교 중앙동아리 고려품새 회장
+      <blockquote>
+        취미가 일이 됐습니다.
+      </blockquote>
+    </li>
+  </ul>
+</details>
+
+<br>
 
 <details>
   <summary><strong>2024년</strong></summary>
