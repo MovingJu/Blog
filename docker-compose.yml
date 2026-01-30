@@ -1,0 +1,28 @@
+services:
+  Nginx:
+    platform: linux/amd64
+    build: 
+      context: "./Nginx/."
+    image : movingju/public:nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    networks:
+      - DRIVE_NET
+    depends_on:
+      - blog
+    volumes:
+      - /etc/letsencrypt:/etc/letsencrypt:ro
+  blog:
+    platform: linux/amd64
+    build: 
+      context: "./blog/."
+    image: movingju/public:blog
+    ports:
+      - "4000:4000"
+    networks:
+      - DRIVE_NET
+
+networks:
+  DRIVE_NET:
+    driver: bridge

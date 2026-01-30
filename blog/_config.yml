@@ -1,0 +1,112 @@
+resume_url: "Resume.pdf"
+author_name: "MovingJu"
+url: ""
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate-v2
+  - jekyll-minifier
+  - jekyll-assets
+  - sprockets
+  - autoprefixer-rails
+  - jemoji
+
+############################################################
+# Site configuration for the Jekyll 3 Pagination Gem
+pagination:
+  enabled: true
+  debug: true
+  collection: "posts"
+  per_page: 10
+  permalink: "/blog/:num/"
+  title: ":title - page :num"
+  limit: 10
+  sort_field: "date"
+  sort_reverse: true
+  category: "posts"
+  tag: ""
+  locale: ""
+  trail:
+    before: 2
+    after: 2
+  extension: html
+  indexpage: "index"
+
+############################################################
+# Site Configuration data for Jekyll Minifier
+jekyll-minifier:
+  preserve_php: true
+  remove_spaces_inside_tags: true
+  remove_multi_spaces: true
+  remove_comments: true
+  remove_intertag_spaces: true
+  remove_quotes: false
+  compress_css: true
+  compress_javascript: true
+  compress_json: true
+  simple_doctype: false
+  remove_script_attributes: false
+  remove_style_attributes: false
+  remove_link_attributes: false
+  remove_form_attributes: false
+  remove_input_attributes: false
+  remove_javascript_protocol: false
+  remove_http_protocol: false
+  remove_https_protocol: false
+  preserve_line_breaks: false
+  simple_boolean_attributes: false
+  compress_js_templates: false
+  preserve_patterns: []
+  uglifier_args:
+    harmony: true
+
+############################################################
+assets:
+  source_maps: true
+  destination: "/assets"
+  compression: false
+  gzip: false
+  defaults:
+    integrity:
+      css: false
+      img: false
+      js: false
+  caching:
+    enabled: true
+    path: ".jekyll-cache/assets"
+    type: file
+  precompile: []
+  raw_precompile: []
+  cdn:
+    baseurl: ""
+    destination: false
+    url: ""
+  sources:
+    - _assets/custom
+  plugins:
+    css:
+      autoprefixer: {}
+    img:
+      optim: {}
+
+  autoprefixer:
+    browsers:
+      - "last 2 versions"
+      - "IE > 9"
+
+google_analytics: "UA_123456789_1"
+
+disqus:
+  shortname: "MovingJu"
+
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    default_lang: python
+    guess_lang: true
