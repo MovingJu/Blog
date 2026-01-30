@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="dns-prefetch" href="https://MovingJu.disqus.com" />
+    <meta
+      itemprop="description"
+      name="description"
+      content="
+        
+            
+        "
+    />
+    <title>
+      
+          Lee Dong Ju | Blog
+      
+    </title>
+
+    <!-- CSS: 비동기 로드 대신 바로 로드 (깜박임 방지) -->
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+
+    <!-- 페이지 렌더 전에 테마 CSS 변수 즉시 적용 (깜박임 방지용) -->
+    <script>
+      (function(){
+        const themeMap = {
+          'default-dark': {
+            'background-color': '#222',
+            'text-color': 'white',
+            'highlight-color': '#2e2e2e'
+          },
+          'default-light': {
+            'background-color': 'white',
+            'text-color': '#222',
+            'highlight-color': '#eee'
+          },
+          'solarized-light': {
+            'background-color': '#fdf6e3',
+            'text-color': '#657b83',
+            'highlight-color': '#eee8d5'
+          },
+          'solarized-dark': {
+            'background-color': '#002b36',
+            'text-color': '#839496',
+            'highlight-color': '#073642'
+          },
+          'sepia-light': {
+            'background-color': '#f4ecd8',
+            'text-color': '#5b4636',
+            'highlight-color': '#e4d5b7'
+          },
+          'sepia-dark': {
+            'background-color': '#3e2c1c',
+            'text-color': '#d8c3a5',
+            'highlight-color': '#4b382a'
+          }       // 필요시 추가 테마 넣기
+        };
+        const savedTheme = localStorage.getItem('theme') || 'default-dark';
+        const theme = themeMap[savedTheme] || themeMap['default-dark'];
+        const html = document.documentElement;
+        for (const key in theme) {
+          html.style.setProperty(`--primary-${key}`, theme[key]);
+        }
+      })();
+    </script>
+
+    <!-- 기존 메타, dns-prefetch, 폰트 등은 그대로 유지 -->
+    <link rel="dns-prefetch" href="www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="www.google-analytics.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet" />
+
+    <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA_123456789_1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA_123456789_1');
+</script>
+
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" />
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Lee Dong Ju Blog</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Lee Dong Ju Blog" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/blog/" />
+<meta property="og:url" content="http://localhost:4000/blog/" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Lee Dong Ju Blog" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","headline":"Lee Dong Ju Blog","url":"http://localhost:4000/blog/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body onload="onLoad()">
+    <select id='themeSelector' onchange="toggleTheme()" aria-label="Select theme">
+</select>
+
+    <div class="mid-section-cover">
+    <nav>
+        <h1>MovingJu</h1>
+        <ul>
+      <li>
+        <a href = "/">
+          Home
+        </a>
+      </li>
+      <li style="margin-top: 5px;">
+        <a href = "/about/">
+          About
+        </a>
+      </li>
+      <li style="margin-top: 5px;">
+        <a href = "/blog/">
+          Blog
+        </a>
+      </li>
+      <li style="margin-top: 5px;">
+        <a href = "/Resume.pdf">
+          Resume
+        </a>
+      </li>
+</ul>
+    </nav>
+    <main class="sub-mid-section-cover">
+        <!-- This loops through the paginated posts -->
+
+
+
+<div class="blogPage-categoryList">
+    <ul>
+    <li><a href="/categories/">Categories</a> : </li>
+    
+        
+        <li><a href="/categories/#%EC%B1%85%20%EB%A6%AC%EB%B7%B0">책 리뷰</a></li>
+    
+        
+        <li><a href="/categories/#%ED%83%90%EA%B5%AC%20%EB%B3%B4%EA%B3%A0%EC%84%9C">탐구 보고서</a></li>
+    
+        
+        <li><a href="/categories/#Algorithm">Algorithm</a></li>
+    
+        
+        <li><a href="/categories/#Research">Research</a></li>
+    
+        
+        <li><a href="/categories/#Project">Project</a></li>
+    
+</ul>
+</div>
+<ul class="blog-list">
+    
+        <li>
+            <a class="blog-heading" href="/project/research/2025/11/24/Project-_Onvacation_project.html">[Project] Onvacation Project</a><span class="date">24 Nov 2025</span>
+            <div class="excerpt"><p><strong>글쓴이</strong> : MovingJu</p>
+</div>
+        </li>
+    
+        <li>
+            <a class="blog-heading" href="/research/2025/08/04/Research-_pigo_backend.html">[Research] PageRank의 소규모 데이터 적용과 추천 시스템의 구현 과정</a><span class="date">04 Aug 2025</span>
+            <div class="excerpt"><p><strong>글쓴이</strong> : MovingJu</p>
+</div>
+        </li>
+    
+        <li>
+            <a class="blog-heading" href="/algorithm/2025/07/28/algorithm-_baekjun_1043.html">[Algorithm] 백준 1043 - 거짓말</a><span class="date">28 Jul 2025</span>
+            <div class="excerpt"><p><strong>글쓴이</strong> : MovingJu</p>
+</div>
+        </li>
+    
+        <li>
+            <a class="blog-heading" href="/%ED%83%90%EA%B5%AC%20%EB%B3%B4%EA%B3%A0%EC%84%9C/2025/07/17/Project-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%EB%A5%BC-%EC%8D%A8%EB%B3%B4%EC%9E%90.html">[작업 환경] db를 써보자.</a><span class="date">17 Jul 2025</span>
+            <div class="excerpt"><p><strong>글쓴이</strong> : 이동주</p>
+</div>
+        </li>
+    
+        <li>
+            <a class="blog-heading" href="/%EC%B1%85%20%EB%A6%AC%EB%B7%B0/2024/07/13/%EC%B1%85-%EB%A6%AC%EB%B7%B0-%EC%B9%A8%EB%AC%B5%EC%9D%98-%EB%B4%84.html">[책 리뷰] 침묵의 봄</a><span class="date">13 Jul 2024</span>
+            <div class="excerpt"><p><strong>저자: 레이첼 카슨</strong></p>
+</div>
+        </li>
+    
+</ul>
+
+
+<hr>
+
+
+    </main>
+</div>
+
+
+    <!-- 기존 스크립트들, defer 유지 -->
+    <script defer src="/assets/js/theme.js"></script>
+    <script defer src="/assets/js/script.js"></script>
+
+    <!-- md내에서 htmx 사용. -->
+    <script src="https://unpkg.com/htmx.org@1.9.11"></script>
+  </body>
+</html>

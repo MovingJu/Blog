@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="dns-prefetch" href="https://MovingJu.disqus.com" />
+    <meta
+      itemprop="description"
+      name="description"
+      content="
+        
+            
+        "
+    />
+    <title>
+      
+          MovingJu
+      
+    </title>
+
+    <!-- CSS: 비동기 로드 대신 바로 로드 (깜박임 방지) -->
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+
+    <!-- 페이지 렌더 전에 테마 CSS 변수 즉시 적용 (깜박임 방지용) -->
+    <script>
+      (function(){
+        const themeMap = {
+          'default-dark': {
+            'background-color': '#222',
+            'text-color': 'white',
+            'highlight-color': '#2e2e2e'
+          },
+          'default-light': {
+            'background-color': 'white',
+            'text-color': '#222',
+            'highlight-color': '#eee'
+          },
+          'solarized-light': {
+            'background-color': '#fdf6e3',
+            'text-color': '#657b83',
+            'highlight-color': '#eee8d5'
+          },
+          'solarized-dark': {
+            'background-color': '#002b36',
+            'text-color': '#839496',
+            'highlight-color': '#073642'
+          },
+          'sepia-light': {
+            'background-color': '#f4ecd8',
+            'text-color': '#5b4636',
+            'highlight-color': '#e4d5b7'
+          },
+          'sepia-dark': {
+            'background-color': '#3e2c1c',
+            'text-color': '#d8c3a5',
+            'highlight-color': '#4b382a'
+          }       // 필요시 추가 테마 넣기
+        };
+        const savedTheme = localStorage.getItem('theme') || 'default-dark';
+        const theme = themeMap[savedTheme] || themeMap['default-dark'];
+        const html = document.documentElement;
+        for (const key in theme) {
+          html.style.setProperty(`--primary-${key}`, theme[key]);
+        }
+      })();
+    </script>
+
+    <!-- 기존 메타, dns-prefetch, 폰트 등은 그대로 유지 -->
+    <link rel="dns-prefetch" href="www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="www.google-analytics.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet" />
+
+    <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA_123456789_1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA_123456789_1');
+</script>
+
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" />
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>MovingJu</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="MovingJu" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="MovingJu" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","headline":"MovingJu","url":"http://localhost:4000/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body onload="onLoad()">
+    <select id='themeSelector' onchange="toggleTheme()" aria-label="Select theme">
+</select>
+
+    <div class="mid-section-home">
+    <h1><span>I am </span>MovingJu</h1>
+    <div class="row sub-heading">
+        <div class="summary-about-me">
+            <p>More than a site<br>A Moving place.</p>
+        </div>
+        <div class="nav-link">
+            <ul>
+      <li>
+        <a href = "/">
+          Home
+        </a>
+      </li>
+      <li style="margin-top: 5px;">
+        <a href = "/about/">
+          About
+        </a>
+      </li>
+      <li style="margin-top: 5px;">
+        <a href = "/blog/">
+          Blog
+        </a>
+      </li>
+      <li style="margin-top: 5px;">
+        <a href = "/Resume.pdf">
+          Resume
+        </a>
+      </li>
+</ul>
+        </div>
+    </div>
+</div>
+
+
+    <!-- 기존 스크립트들, defer 유지 -->
+    <script defer src="/assets/js/theme.js"></script>
+    <script defer src="/assets/js/script.js"></script>
+
+    <!-- md내에서 htmx 사용. -->
+    <script src="https://unpkg.com/htmx.org@1.9.11"></script>
+  </body>
+</html>
