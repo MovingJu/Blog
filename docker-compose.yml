@@ -9,10 +9,11 @@ services:
       - "443:443"
     networks:
       - DRIVE_NET
-    depends_on:
-      - blog
     volumes:
       - /etc/letsencrypt:/etc/letsencrypt:ro
+    depends_on:
+      - blog
+    restart: unless-stopped
   blog:
     platform: linux/amd64
     build: 
