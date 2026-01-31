@@ -1,6 +1,10 @@
 .DS_Store
 .env
 hide
+
+.jekyll-cache
+project.sh
+
+
 _site/
 blog/_site/
-.jekyll-cache
