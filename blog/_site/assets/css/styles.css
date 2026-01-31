@@ -45,7 +45,8 @@ p {
   }
 }
 .mid-section-home h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
+  white-space: nowrap;
   font-weight: 600;
 }
 
@@ -57,7 +58,7 @@ p {
 @media (max-width: 480px) {
   .sub-heading {
     width: 60%;
-    min-width: 270px;
+    min-width: 300px;
   }
 }
 

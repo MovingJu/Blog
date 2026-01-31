@@ -53,7 +53,8 @@ p {
     }
   }
   h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
+    white-space: nowrap;
     font-weight: 600;
   }
 }
@@ -64,7 +65,7 @@ p {
 
   @include mediaQuery(phone-width) {
     width: 60%;
-    min-width: 270px;
+    min-width: 300px;
   }
 }
 .summary-about-me {
