@@ -33,6 +33,7 @@ p {
   align-content: center;
   width: 100%;
   min-height: 89vh;
+  min-height: 89dvh;
   margin: auto;
   font-size: 1.5rem;
 }
