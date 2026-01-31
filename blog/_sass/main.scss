@@ -47,7 +47,6 @@ p {
   margin: auto;
   font-size: 1.5rem;
   @include mediaQuery(phone-width) {
-    font-size: 1 rem;
     span {
       display: none;
     }
@@ -69,7 +68,8 @@ p {
   }
 }
 .summary-about-me {
-  width: 50%;
+  // width: 50%;
+  width: auto;
   text-align: right;
   padding-right: 20px;
 }
@@ -80,8 +80,8 @@ p {
   li {
     display: block;
     text-align: left;
-    margin: 10px 0;        // ✅ 아이템 간 간격
-    line-height: 1.4;     // ✅ 위아래 여백 느낌 (가독성)
+    margin: 10px 0;    
+    line-height: 1.4;  
     a {
       text-decoration: none;
       color: var(--primary-text-color);
@@ -92,7 +92,8 @@ p {
     }
   }
   border-left: 2px solid var(--primary-text-color);
-  width: 50%;
+  // width: 50%;
+  width: auto;
   padding-left: 20px;
   @include mediaQuery(phone-width) {
     li {
@@ -100,6 +101,10 @@ p {
       margin-left: 10px;
     }
   }
+}
+.summary-about-me,
+.nav-link {
+  flex: 1;
 }
 .mid-section-cover {
   width: 60%;

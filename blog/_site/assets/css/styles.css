@@ -37,9 +37,6 @@ p {
   font-size: 1.5rem;
 }
 @media (max-width: 480px) {
-  .mid-section-home {
-    font-size: 1 rem;
-  }
   .mid-section-home span {
     display: none;
   }
@@ -63,14 +60,14 @@ p {
 }
 
 .summary-about-me {
-  width: 50%;
+  width: auto;
   text-align: right;
   padding-right: 20px;
 }
 
 .nav-link {
   border-left: 2px solid var(--primary-text-color);
-  width: 50%;
+  width: auto;
   padding-left: 20px;
 }
 .nav-link ul {
@@ -95,6 +92,11 @@ p {
     display: block;
     margin-left: 10px;
   }
+}
+
+.summary-about-me,
+.nav-link {
+  flex: 1;
 }
 
 .mid-section-cover {
