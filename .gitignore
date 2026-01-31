@@ -2,4 +2,5 @@
 .env
 hide
 _site/
+blog/_site/
 .jekyll-cache
