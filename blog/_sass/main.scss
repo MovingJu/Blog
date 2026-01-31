@@ -43,8 +43,7 @@ p {
   justify-content: center;
   align-content: center;
   width: 100%;
-  max-width: 400px;
-  height: 100vh;
+  min-height: 90vh;
   margin: auto;
   font-size: 1.5rem;
   @include mediaQuery(phone-width) {
@@ -80,6 +79,8 @@ p {
   li {
     display: block;
     text-align: left;
+    margin: 10px 0;        // ✅ 아이템 간 간격
+    line-height: 1.4;     // ✅ 위아래 여백 느낌 (가독성)
     a {
       text-decoration: none;
       color: var(--primary-text-color);
@@ -92,8 +93,6 @@ p {
   border-left: 2px solid var(--primary-text-color);
   width: 50%;
   padding-left: 20px;
-  // .toNav {
-  // }
   @include mediaQuery(phone-width) {
     li {
       display: block;

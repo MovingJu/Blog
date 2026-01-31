@@ -32,8 +32,7 @@ p {
   justify-content: center;
   align-content: center;
   width: 100%;
-  max-width: 400px;
-  height: 100vh;
+  min-height: 90vh;
   margin: auto;
   font-size: 1.5rem;
 }
@@ -79,6 +78,8 @@ p {
 .nav-link li {
   display: block;
   text-align: left;
+  margin: 10px 0;
+  line-height: 1.4;
 }
 .nav-link li a {
   text-decoration: none;

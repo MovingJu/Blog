@@ -1,5 +1,5 @@
 ---
 layout: home
-home_text: More than a site<br>A Moving place.
+home_text: More than<br>a site<br>A Moving<br>place.
 title: MovingJu
 ---

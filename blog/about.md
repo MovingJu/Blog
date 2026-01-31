@@ -146,7 +146,7 @@ permalink: /about/
     </li>
     <li>
       <strong>10월:</strong> <a href="https://thon.khlug.org/about/2025">ICPC 경희대학교 예선 교내 2등</a><br>
-      <blockquote>Team Alcoholic으로 참가. 자세한 내용은 [기사](https://swedu.khu.ac.kr/bbs/board.php?bo_table=07_02&wr_id=564) 참고.</blockquote>
+      <blockquote>Team Alcoholic으로 참가. 자세한 내용은 <a href="https://swedu.khu.ac.kr/bbs/board.php?bo_table=07_02&wr_id=564">기사</a> 참고.</blockquote>
     </li>
   </ul>
 </details>
