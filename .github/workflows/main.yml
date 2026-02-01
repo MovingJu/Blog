@@ -36,7 +36,7 @@ jobs:
       - name: Run CI/CD.sh on EC2
         run: |
           ssh -o StrictHostKeyChecking=no ${{ secrets.AWS_EC2_USER }}@${{ secrets.AWS_EC2_HOST }} "
-            docker stop movingju/public:blog
-            docker pull movingju/public:blog
-            docker run -p 4000:4000 -d movingju/public:blog
+            cd ~
+            docker compose pull blog
+            docker compose up blog
           "
