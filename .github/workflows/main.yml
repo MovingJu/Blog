@@ -22,9 +22,10 @@ jobs:
       - name: Run CI/CD.sh on EC2
         run: |
           ssh -o StrictHostKeyChecking=no ${{ secrets.AWS_EC2_USER }}@${{ secrets.AWS_EC2_HOST }} "
-            cd /home/${{ secrets.AWS_EC2_USER }}/movingju.com && 
+            cd /home/${{ secrets.AWS_EC2_USER }}/movingju.com/ 
             git fetch --all
             git reset --hard origin/main
-            docker compose build
-            docker compose up -d
+            cd blog
+            docker build -t movingju/public:blog .
+            docker run -p 4000:4000 -d movingju/public:blog
           "
