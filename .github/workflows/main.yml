@@ -38,5 +38,5 @@ jobs:
           ssh -o StrictHostKeyChecking=no ${{ secrets.AWS_EC2_USER }}@${{ secrets.AWS_EC2_HOST }} "
             cd ~
             docker compose pull blog
-            docker compose up blog
+            docker compose up -d blog
           "
