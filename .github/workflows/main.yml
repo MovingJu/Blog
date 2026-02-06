@@ -23,7 +23,7 @@ jobs:
       - name: Build Docker image
         run: |
           cd blog
-          docker build -t movingju/public:movingju.com .
+          docker buildx build --platform=linux/amd64 -t movingju/public:movingju.com .
           
       - name: Push Docker image
         run: docker push movingju/public:movingju.com
