@@ -4,7 +4,8 @@ title:  "[Project] Rust 백엔드 OpenAPI 생성 도구 탐색"
 tagline: Project
 author: MovingJu
 categories: [Project]
-lastmode: 2026-02-07 12:00:00
+lastmode: 2026-02-05 12:00:00
+image: assets/images/posts/test.png
 sitemap:
   changefreq: daily
   priority : 1.0

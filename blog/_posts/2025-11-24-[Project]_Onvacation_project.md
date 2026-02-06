@@ -3,7 +3,7 @@ layout: post
 title:  "[Project] Onvacation Project"
 tagline: Project
 author: MovingJu
-categories: [Project, Research]
+categories: [Project]
 lastmode: 2025-11-24 12:00:00
 sitemap:
   changefreq: daily

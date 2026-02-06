@@ -1,6 +1,8 @@
 resume_url: "Resume.pdf"
 author_name: "MovingJu"
-url: ""
+url: "movingju.com"
+future: true
+timezone: Asia/Seoul
 
 plugins:
   - jekyll-seo-tag

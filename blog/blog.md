@@ -1,7 +1,7 @@
 ---
 layout: blog
 permalink: /blog/
-title: Lee Dong Ju | Blog
+title: Dong Ju Lee | Blog
 pagination:
   enabled: true
 ---
